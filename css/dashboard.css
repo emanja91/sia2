@@ -1,0 +1,100 @@
+/*Variables */
+:root{
+            --primary: #1e3a8a;
+            --primary-light: #3b82f6;
+            --bg: #f8fafc;
+            --surface: #ffffff;
+            --text: #0f172a;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+}
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'segoe ui', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*Estructura base de pantalla completa*/
+html,body{
+    width:100%;
+    height:100%;
+}
+body{
+    background-color:var(--bg);
+    color:var(--text);
+    display:flex;
+    min-height:100vh;
+}
+/* Menu barra lateral expandiendo vertificalmente*/
+.sidebar{
+    width:260px;
+    background-color:var(--primary);
+    color:white;
+    padding: 2rem 1rem;
+    display:flex;
+    flex-direction:column;
+    flex-shrink:0;
+}
+.sidebar h2{
+    font-size:1.25rem;
+    margin-bottom:2rem;
+    padding-left:0.5rem;
+    border-left: 4px solid var(--primary-light);
+}
+.menu-list{
+    list-style:none;
+}
+.menu-item{
+    margin-bottom:0.5rem;
+}
+.menu-link{
+    color:#cbd4e1;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    display:block;
+    border-radius:0.375rem;
+    transition: all 0.2s;
+}
+.menu-link:hover, menu-link.active{
+    background-color:var(--primary-light);
+    color:white;
+}
+/* Area principal que ocupa todo el espacio restante */
+.main-content{
+    flex:1;
+    padding:2rem;
+    overflow-y:auto;
+}
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:2rem;
+    padding-bottom:1rem;
+    border-bottom:1px solid var(--border);
+}
+.user-info {
+    text-align:right;
+}
+.user-info .role{
+    font-size: 0.875rem;
+    color:var(--text-muted);
+}
+/* grilla adaptable de tarjeta*/
+.grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap:1.5rem;
+}
+.card{
+    background: var(--surface);
+    padding:1.5rem;
+    border-radius:0.5rem;
+    border: 1px solid var(--border);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+.card h3{
+    margin-bottom:1rem;
+    color: var(--primary);
+    font-size:1.1rem;
+}

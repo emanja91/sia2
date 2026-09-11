@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIA | Iniciar Sesion</title>
+    <link href="css/estilos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Contenedor de la pagina para iniciar sesión-->
+     <div class="login-card">
+        <!-- Encabezado informativo-->
+         <div class="login-header">
+            <h1>Iniciar Sesion</h1>
+            <p>Ingrese a sus credenciales para acceder al sistema</p>
+         </div>
+         <!-- Formulario de inicio de sesión-->
+          <form action="#" method="POST">
+            <!--Campo de usuario o Correo electronico-->
+            <div class="form-group">
+                <label for="username">Usuario o Correo Electrónico</label>
+                <input type="text" id="username" name="username" class="form-control" placeholder="Ej: 2021001 o usuario@dominio.com" required>
+            </div>
+            <!--Campo de contraseña-->
+            <div class="form-group">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" class="form-control" placeholder="Ingrese su contraseña" required>
+            </div>
+            <!--opciones para recordar sesion y recuperar clave de acceso-->
+            <div class="form-actions">
+                <label class="remmeber-me">
+                    <input type="checkbox" name="remember"> 
+                    <span> Recordar sesion</span>
+                </label>
+            </div>
+            <!-- Boton de inicio de sesión-->
+             <button type="submit" class="btn-submit">Iniciar Sesion</button>
+             <!--Pie Pagina-->
+             <footer class="login-footer">
+                <p> ¿Aun no tienes tu cuenta? <a href="registro.html">Registrate aquí</a></p>
+                <p> ir a dashboard <a href="html/dashboard.html" target="_blank">Acceder</a></p>
+             </footer>
+          </form>
+     </div>
+</body>
+</html>

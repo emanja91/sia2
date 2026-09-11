@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIA | Dashboard Estudiante</title>
+    <link href="../css/dashboard.css" rel="stylesheet">
+</head>
+<body>
+    <!-- menu de navegacion que es un contenedor-->
+    <div class="sidebar">
+        <h2> Portal Academico</h2>
+        <ul class="menu-list">
+            <li><a href="#" class="menu-link active">Inicio</a></li>
+            <li><a href="#" class="menu-link">Mi perfil</a></li>
+            <li><a href="#" class="menu-link">Consultar Notas</a></li>
+            <li><a href="#" class="menu-link">Solicitar certificado</a></li>
+            <li><a href="#" class="menu-link">Matricular Materias</a></li>
+        </ul>
+    </div>
+    <!-- Contenedor principal de la pagina-->
+    <div class="main-content">
+        <header class="header">
+            <h1> Dashboard de Gestion Estudiantil</h1>
+            <div class="user-info">
+                <strong>Bienvenida Mariana Manjarres</strong>
+                <div class="role">
+                    <strong>Codigo : 20261001</strong>
+                </div>
+            </div>
+        </header>
+    <!-- Contenido principal de la pagina uso de grid -->
+     <div class="grid">
+        <section class="card" id="notas">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Materia</th>
+                        <th>Nota 1 </th>
+                        <th>Nota 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Matematicas</td>
+                        <td>4.5</td>
+                        <td>4.0</td>
+                    </tr>
+                    <tr>
+                        <td>Historia</td>
+                        <td>3.8</td>
+                        <td>4.2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!-- card para certificaciones-->
+         <section class="card" id="certificados">
+            <h3>Solicitud de certificados</h3>
+            <p style=" color:var(--text-muted); font-size:0.9 rem; margin-bottom: 1 rem;">Genera certificados oficiales por ejemplo formato .PDF al instante</p>
+            <button class="btn">Solicitar certificado</button>
+         </section>
+     </div>
+    </div>
+</body>
+</html>
